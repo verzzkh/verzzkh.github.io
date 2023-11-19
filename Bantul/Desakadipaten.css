@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    font-family: Verdana;
+    padding: 20px;
+    text-align: center;
+}
+
+.main {
+    padding: 20px 10px 20px 10px;
+    display: flex;
+}
+
+.kiri{
+    width: 75%;
+    padding-right: 20px;
+    height: auto;
+}
+
+img{
+ width: 100%;
+ position: center;
+ background-position: center;
+ border-radius: 10px;
+}
+
+.card {
+    width: 95%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan untuk efek ketinggian */
+    background-color: #fff; /* Memberikan latar belakang putih */
+    padding: 20px; /* Menambahkan ruang dalam kartu */
+}
+
+.card img {
+    max-width: 100%; 
+    position: middle center;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+.card-text {
+    font-size: 1rem; 
+}
+
+.btn-primary {
+    background-color: orange;
+    color: #fff;
+    text-decoration: none; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: orangered; 
+}
+/* Gaya untuk elemen <details> (dropdown) */
+details {
+    background-color: transparent; /* Hapus latar belakang elemen <details> */
+    border: 1px solid #ccc; /* Garis tepi dropdown */
+    border-radius: 5px; /* Sudut melengkung dropdown */
+    margin-bottom: 10px; /* Berikan margin bawah antara dropdown dan konten */
+    overflow: hidden; /* Hapus overflow agar konten dalam dropdown tidak muncul di luar batas dropdown */
+}
+
+/* Gaya untuk elemen <summary> dalam dropdown */
+summary {
+    cursor: pointer;
+    background-color: orange; /* Warna latar belakang elemen <summary> */
+    color: #fff; /* Warna teks */
+    padding: 10px;
+    border: 1px solid orange; /* Garis tepi elemen <summary> */
+    border-radius: 5px; /* Sudut melengkung elemen <summary> */
+    outline: none;
+}
+
+/* Gaya untuk elemen <summary> saat diklik */
+details[open] summary {
+    background-color: orangered; /* Warna latar belakang elemen <summary> saat terbuka */
+    border-color: orangered; /* Warna garis tepi saat terbuka */
+}
+
+/* Gaya untuk konten dropdown saat terbuka */
+details[open] p {
+    background-color: #fff; /* Warna latar belakang konten dropdown */
+    padding: 10px;
+    width: 100%; /* Lebarkan konten untuk mengisi seluruh lebar dropdown */
+}
+
+.kanan {
+    width: 25%;
+}
+.bawah {
+    flex-grow: 1; /* Mengatur elemen dengan class "bawah" untuk mengisi 100% bagian bawah */
+}
+
+
+/* Gaya untuk elemen "highlight" */
+.highlight {
+    background-color: orange; /* Warna latar belakang untuk elemen "highlight" */
+    color: #fff; /* Warna teks */
+    padding: 10px;
+    border-radius: 5px; /* Sudut melengkung elemen "highlight" */
+}
+
+/* Gaya untuk elemen "fitur" */
+.fitur {
+    background-color: orange; /* Warna latar belakang untuk elemen "fitur" */
+    color: #fff; /* Warna teks */
+    padding: 10px;
+    border-radius: 5px; /* Sudut melengkung elemen "fitur" */
+}
+
+.footer {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#kelas{
+    color: red;
+    float: top;
+}
+
+@media only screen and (max-width: 760px) {
+    .header {
+        background-color: black;
+    }
+    .main {
+        flex-direction: column;    
+        padding: 20px 15px 0 15px;
+        background-color: lightblue;
+    }
+    .kiri{
+        width: 100%;
+        margin: 0;
+    }
+    .kanan {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .content {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .ads {
+        width: 100%;
+    }
+    .footer {
+        margin-top: 10px;
+    }
+}
